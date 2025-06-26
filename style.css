@@ -340,10 +340,7 @@ body {
     width: 37vw;  /* কমানো হয়েছে */
     height: 37vw; /* কমানো হয়েছে */
     border-radius: 5vw;
-    background: linear-gradient(45deg, rgba(3, 255, 7, 0.664), #ff0088, rgb(246, 255, 0), #1e00ff);
-    background-size: 15vw 15vw;
-    z-index: 1;
-    animation: animateBorder 6s linear infinite;
+    
     opacity: 1;
     top: -1vw;    /* উপরে উঠানো হয়েছে */
     left: -1vw;   /* বামে সরানো হয়েছে */
@@ -514,6 +511,7 @@ body {
     #Project h3 {
         color: #0ef;
         margin-top: 1.5vw;
+        font-size: 1.6vw;
     }
     #Project p{
         line-height: 2;
