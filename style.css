@@ -723,7 +723,7 @@ body {
 }
 .top{
     position: fixed;
-    bottom: 2vw;
+    bottom: 1.5vw;
     left: 2vw;
     display: flex;
     opacity: 0;
@@ -731,7 +731,7 @@ body {
 }
 
 .top.active{
-    bottom: 2.1vw;
+    bottom: 1.5vw;
     pointer-events: auto;
     opacity: 1;
 }
