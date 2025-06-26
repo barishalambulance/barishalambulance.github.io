@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://sebaambulancebarguna.github.io/sitemap.xml
