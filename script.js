@@ -18,26 +18,6 @@ var typed = new Typed(".text", {
 });
 
 
-// const toTop = document.querySelector(".scroll-to-top");
-// const mobilefixed = document.querySelector(".floating-call-button");
-// window.addEventListener("scroll",() =>{
-//     if (window.pageYOffset > 100){
-//       toTop.
-//         toTop.classList.add("active");
-//        mobilefixed.classList.add("active");
-//     }
-//     else{
-//         toTop.classList.remove("active");
-//         mobilefixed.classList.remove("active");
-//         console.log("Active remove");
-//     }
-// })
-
-// console.log("✅ JavaScript is working!");
-// alert("✅ JavaScript কাজ করছে!kjjjjjjjjjjjjjjjjj");
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const toTop = document.querySelector(".scroll-to-top");
     const mobilefixed = document.querySelector(".floating-call-button");

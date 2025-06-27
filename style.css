@@ -832,14 +832,14 @@ body {
     .logo {
         position: relative;
         font-weight: 500;
-        font-size: 4.5VW;
+        font-size: 5.5VW;
     }
     .logo::after{
         content: "\a";
         white-space: pre;
     }
     .navbar a{
-        font-size: 3.5vw;
+        font-size: 4.5vw;
         color: white;
     }
    .navbar a:nth-of-type(1) {
@@ -868,7 +868,7 @@ body {
         text-align: center;
         padding-left: 0;
     }
-    .home-content h3,.home-content h4, .home-content h4 span,.home-content a{
+    .Home_Data h3,.Home_Data h4, .Home_Data h4 span,.Home_Data a{
         font-size: 4.5vw;
         font-weight: normal;
     }
@@ -941,7 +941,7 @@ body {
     .header a,.Home_Data h1,.about-text h2, .services-section h2, #Project h2, .contact-text h2, .service-item h3, .Traning-Section h2 {
         font-size: 5.5vw;
     }
-    .Home_Data h2,.Home_Data h3,.about-text p,.about-text p span, .service-item p, .projectP, .contact-text h4,#Gmail,#Project p,#Project h3,#Project p span,.navbarproject a,.contact-list li,.contact-list li a, .textcontrainer p{
+    .Home_Data h2,.Home_Data h3,.about-text p,.about-text p span, .service-item p, .projectP, .contact-text h4,#Gmail,#Project p,#Project h3,#Project p span,.navbarproject a,.contact-list li,.contact-list li a, .textcontrainer p,.floating-call-button{
         font-size: 4.5vw;
     }
     .about-text p span {
@@ -952,18 +952,31 @@ body {
         font-size: 4.5vw;
         gap: 2vw;
     }
-    .top i {
-        font-size: 4.8vw; /* বা px দিয়ে যেমন: 24px */
+    .scroll-to-top img {
+        width: 4.8vw; 
+        height: 4.8vw;
     }
+    .floating-call-button {
+        bottom: 2vw;
+        right: 2vw;
+    }
+    .scroll-to-top {
+        left: 2vw;
+    }
+
     .DownloadDiv a, .last-text p{
         font-size: 4vw;
     }
     .navbar {
         margin-top: .5vw;
     }
+    .logo{
+        font-size: 6.5vw;
+    }
+
     .navbar a{
         color: #ffffff;
-        font-size: 3.5vw;
+        font-size: 4.5vw;
     }
 
 
@@ -1005,6 +1018,9 @@ body {
     /* Project */
     #Project {
         padding: 2% 2%;
+    }
+    #Project h2 {
+        line-height: 2;
     }
    
     /* Contact */
@@ -1083,7 +1099,7 @@ body {
         min-height: auto;
         position: relative;
         background-color: #000;
-        margin-top: 10vh;
+        margin-top: 15vh;
     }
     .home-content {
         max-width: 100%;
