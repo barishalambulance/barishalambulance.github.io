@@ -89,7 +89,7 @@ body {
 }
 
 .home-content h1 {
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: 700;
     padding-top: .4vw;
     padding-bottom: .7vw;
@@ -140,42 +140,6 @@ body {
 }
 
 
-.call-button {
-  position: fixed;
-  bottom: 8vh;
-  right: 1.7vw;
-  background-color: #0ef;
-  color: #ffffff;
-  padding: .7vw .9vw;
-  border-radius: 2vw;
-  background-color: #28a745;
-  box-shadow: 0 .4vw .8vw rgba(0,0,0,0.3);
-  text-align: center;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: .8vw;
-  z-index: 1000;
-  animation: slideBottom 0.6s ease forwards;
-}
-.call-button.active {
-  opacity: 1;
-  visibility: visible;
-  animation: slideBottom 0.6s ease forwards;
-}
-
-.call-button:hover {
-    background-color: #e1c912;
-    color: #000;
-    box-shadow: 0 0 1vw .6vw #6d620b, 0 0 2vw .8vw  #897c18;
-    transform: scale(1.05);
-    transition: 
-    all 0.3s ease;
-}
-
-
-.phonecall:hover {
-      color: #e1c912;
-}
 @keyframes slideBottom1 {
       0% {
         transform: translateY(100px);
@@ -660,8 +624,8 @@ body {
     bottom: 1vw;
     left: 1.5vw; /* বাম পাশে */
     z-index: 999;
-    padding: .6vw .8vw;
-    border-radius: .5vw;
+    padding: .5vw;
+    border-radius: .2vw;
     background-color: #0ef;
     color: white;
     font-weight: bold;
@@ -676,7 +640,7 @@ body {
 }
 .scroll-to-top img {
     width: 2vw;
-    height: 2vw;
+    height: 1.8vw;
 }
 
 /* Floating Call Button (ডান পাশে) */
@@ -952,6 +916,10 @@ body {
         font-size: 4.5vw;
         gap: 2vw;
     }
+    .scroll-to-top {
+        padding-left: .5vw;
+        padding-right: .5vw;
+    }
     .scroll-to-top img {
         width: 4.8vw; 
         height: 4.8vw;
@@ -962,6 +930,7 @@ body {
     }
     .scroll-to-top {
         left: 2vw;
+        bottom: 2vw;
     }
 
     .DownloadDiv a, .last-text p{

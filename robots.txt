@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://barishalambulance.github.io/sitemap.xml
