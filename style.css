@@ -138,39 +138,6 @@ body {
     opacity: 0;
     animation: slideBottom1 2s ease forwards;
 }
-.floating-call-button {
-      position: fixed;
-      bottom: 3vh;
-      right: 1.7vw;
-      background-color: #28a745;
-      color: white;
-      padding: .7vw .9vw;
-      border-radius: 2vw;
-      font-size: .8vw;
-      font-weight: bold;
-      text-decoration: none;
-      box-shadow: 0 .4vw .8vw rgba(0,0,0,0.3);
-      z-index: 9999;
-      animation: slideBottom 0.6s ease forwards;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.4s;  
-}
-
-.floating-call-button.active {
-  opacity: 1;
-  visibility: visible;
-  animation: slideBottom 0.6s ease forwards;
-}
-
-.floating-call-button:hover {
-    background-color: #e1c912;
-    color: #000;
-    box-shadow: 0 0 1vw .6vw #6d620b, 0 0 2vw .8vw  #62580b;
-    transform: scale(1.05);
-    transition: 
-    all 0.3s ease;
-}
 
 
 .call-button {
@@ -568,44 +535,6 @@ body {
       left: 0;
     }
 
-    #videos {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.6vw;
-      justify-content: center;
-      padding: 1.5vw;
-    }
-
-    .video {
-      width: 300px;
-    }
-
-    .video iframe {
-      width: 100%;
-      height: 170px;
-      border-radius: .4vw;
-      box-shadow: 0 .3vw .5vw rgba(79, 83, 80, 0.835);
-    }
-
-    .video p {
-      margin: 5px 0;
-      font-weight: bold;
-      font-size: 14px;
-    }
-
-    h2 {
-      text-align: center;
-      margin-top: 30px;
-      color: #333;
-    }
-
-    .allproject {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: #000;
-    }
-
     * {
     margin: 0;
     padding: 0;
@@ -721,32 +650,63 @@ body {
     font-size: 1.6vw;
     font-family: s;
 }
-.top{
+
+
+
+
+/* Scroll to Top Button (বাম পাশে) */
+.scroll-to-top {
     position: fixed;
-    bottom: 1.5vw;
-    left: 2vw;
-    display: flex;
+    bottom: 1vw;
+    left: 1.5vw; /* বাম পাশে */
+    z-index: 999;
+    padding: .6vw .8vw;
+    border-radius: .5vw;
+    background-color: #0ef;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 .2vw .4vw rgba(0,0,0,0.3);
     opacity: 0;
-    transition: all .4s;
+    visibility: hidden;
+    transition: all 0.4s ease;
 }
-
-.top.active{
-    bottom: 1.5vw;
-    pointer-events: auto;
-    opacity: 1;
-}
-
-.top i{
-    color: black;
-    background: #0ef;
-    font-size: 1.5vw;
-    padding: .8vw;
-    border-radius: .6vw;
-}
-
-.top i:hover {
+.scroll-to-top:hover {
     box-shadow: 0 0 .3vw cyan, 0 0 1.6vw cyan, 0 0 3.4vw cyan, 0 0 7vw cyan, 0 0 15vw cyan;
 }
+.scroll-to-top img {
+    width: 2vw;
+    height: 2vw;
+}
+
+/* Floating Call Button (ডান পাশে) */
+.floating-call-button {
+    position: fixed;
+    bottom: 1vw;
+    right: 1.5vw; /* ডান পাশে */
+    z-index: 999;
+    padding: .6vw .8vw;
+    border-radius: .5vw;
+    background-color: #0ef;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+}
+.floating-call-button:hover {
+    box-shadow: 0 0 .3vw cyan, 0 0 1.6vw cyan, 0 0 3.4vw cyan, 0 0 7vw cyan, 0 0 15vw cyan;
+}
+
+/* Active হলে দেখাবে */
+.scroll-to-top.active,
+.floating-call-button.active {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 @keyframes animate-path1 {
     100% {
